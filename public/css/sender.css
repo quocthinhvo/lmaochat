@@ -196,13 +196,13 @@ body {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  .send_message {
+  /* .send_message {
     visibility: hidden;
   }
   .bottom_wrapper .message_input_wrapper {
     width: 100%
   }
-  
+   */
 
   /* .messages .message.left .avatar {
     visibility: hidden;

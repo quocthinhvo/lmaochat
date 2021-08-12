@@ -52,7 +52,7 @@
                 username: usernameGlobal,
                 text: getMessageText()
             }
-            document.getElementById('messageInput').value = ''
+            // document.getElementById('messageInput').value = ''
             socket.emit('sender', message)
         });
         $('.message_input').keyup(function (e) {
@@ -62,7 +62,7 @@
                     username: usernameGlobal,
                     text: getMessageText()
                 }
-                document.getElementById('messageInput').value = ''
+                // document.getElementById('messageInput').value = ''
                 socket.emit('sender', message)
             }
         });

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lmao chat</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/sender.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div class="chat_window">
+        <div class="top_menu">
+            <div class="buttons">
+                <div class="button close"></div>
+                <div class="button minimize"></div>
+                <div class="button maximize"></div>
+            </div>
+            <div class="title">Chat with ISB</div>
+        </div>
+        <ul class="messages"></ul>
+        <div class="bottom_wrapper clearfix">
+            <div class="message_input_wrapper">
+                <input id="messageInput" class="message_input" placeholder="Type your message here..." />
+            </div>
+            <div class="send_message">
+                <div class="icon"></div>
+                <div class="text">Send</div>
+            </div>
+        </div>
+    </div>
+    <div class="message_template">
+        <li class="message">
+            <div class="avatar"></div>
+            <div class="text_wrapper">
+                <strong class="username"></strong>
+                <div class="text"></div>
+            </div>
+        </li>
+    </div>
+    <script>
+        var usernameGlobal = prompt("Please enter your username", "lmao user") || 'lmao user'
+        const socket = io()
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/sender.js"></script>
+</body>
+
+</html>

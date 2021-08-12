@@ -30,7 +30,6 @@
             if (messageData.text.trim() === '') {
                 return;
             }
-            $('.message_input').val('');
             $messages = $('.messages');
             if (messageData.username == usernameGlobal) {message_side = 'right'} 
                 else message_side = 'left';
@@ -52,7 +51,7 @@
                 username: usernameGlobal,
                 text: getMessageText()
             }
-            // document.getElementById('messageInput').value = ''
+            document.getElementById('messageInput').value = ''
             socket.emit('sender', message)
         });
         $('.message_input').keyup(function (e) {
@@ -62,7 +61,7 @@
                     username: usernameGlobal,
                     text: getMessageText()
                 }
-                // document.getElementById('messageInput').value = ''
+                document.getElementById('messageInput').value = ''
                 socket.emit('sender', message)
             }
         });

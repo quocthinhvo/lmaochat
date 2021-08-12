@@ -204,7 +204,7 @@ body {
   }
   
 
-  .messages .message.left .avatar {
+  /* .messages .message.left .avatar {
     visibility: hidden;
   }
   .messages .message.right .avatar {
@@ -216,5 +216,5 @@ body {
   }
   .messages .message.right .text_wrapper {
     width: 100%
-  }
+  } */
 }
